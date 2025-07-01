@@ -19,7 +19,7 @@ public class TiposDeDatosJava {
         
         // Booleano
         boolean verdadero = true;
-        boolean falso = false;
+        boolean falso = false; /// valor default 
         
         // Mostrar los valores
         System.out.println("\n--- NÚMEROS ENTEROS ---");
