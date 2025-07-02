@@ -1,4 +1,4 @@
-package pracJavaFundamentos;
+
 
 /**
  * Clase que explica los operadores de comparación en Java
