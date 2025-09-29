@@ -6,10 +6,19 @@ public class FactorialNumero {
 
     public static void main(String[] args) {
         int numero = 3; // Cambia este valor para calcular el factorial de otro número
-       // long factorial = calcularFactorial(numero);
-        long factorial = factorialStream(numero); // Usando el método con streams
+        long factorial = calcularFactorial(numero);
+        long factorialStream = factorialStream(numero); // Usando el método con streams
+
         System.out.printf("El factorial de %d es: %d%n", numero, factorial);
+        System.out.printf("El factorial de %d usando bucle es: %d%n", numero, factorialStream);
+
     }
+
+    /*
+     
+
+      
+     */
 
     public static long calcularFactorial(int n) {
         if (n < 0) {
@@ -21,6 +30,20 @@ public class FactorialNumero {
         }
         return resultado;
     }
+
+    /*
+        * Método usando Streams de Java 8 
+     ¿Cómo funciona?
+
+        LongStream.rangeClosed(1, n): Crea un stream de números del 1 al n
+
+        .reduce(1, (a, b) -> a * b): Multiplica todos los números del stream
+
+        1: Valor inicial
+
+        (a, b) -> a * b: Función que multiplica los elementos
+     * 
+     */
 
     public static long factorialStream(int n) {
         if (n < 0) {
