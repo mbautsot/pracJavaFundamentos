@@ -75,7 +75,7 @@ public class JuegoAhorcado {
                 letra = scanner.nextLine().toUpperCase();
 
             } else {
-                
+
                 System.out.println("Entrada inválida. Por favor, introduce una sola letra.");
                 System.out.println("Introduce una letra:");
                 letra = scanner.nextLine().toUpperCase();
@@ -86,3 +86,5 @@ public class JuegoAhorcado {
     }
 
 }
+
+
